@@ -1,0 +1,5 @@
+config.json
+.env
+/vscode
+/idea
+modem-sms-register
