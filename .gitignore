@@ -3,3 +3,4 @@ config.json
 /vscode
 /idea
 modem-sms-register
+bin/

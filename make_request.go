@@ -22,9 +22,14 @@ func make_request(url_address string, phone_number string, message_text string) 
 		return err
 	}
 
+	sha_key, err := get_sha_key_from_config()
+	if err != nil {
+		return err
+	}
+
 	req.Header = http.Header{
-		"Content-Type":  []string{"application/json"},
-		"Authorization": []string{"Bearer Token"},
+		"Content-Type":   []string{"application/json"},
+		"x-access-token": []string{sha_key},
 	}
 
 	res, err := client.Do(req)

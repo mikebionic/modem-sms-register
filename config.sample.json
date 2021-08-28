@@ -2,5 +2,6 @@
 	"serial_port": "/dev/ttyUSB3",
 	"hostname": "http://hostname",
 	"url_prefix": "/api",
-	"url_path": "/sms-register/"
+	"url_path": "/sms-register/",
+	"sha_key": "secret key"
 }
