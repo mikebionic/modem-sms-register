@@ -1,10 +1,16 @@
+
 # Modem SMS Register
 
-A robust Go CLI application that interfaces with GSM modems to receive SMS messages and forward them to HTTP endpoints for processing. This service acts as a bridge between physical GSM modems and web applications, enabling SMS-based integrations and workflows.
+A robust **Go CLI application** that interfaces with GSM modems to receive SMS messages and forward them to HTTP endpoints for processing. This service acts as a bridge between physical GSM modems and web applications, enabling SMS-based integrations and workflows.
+
+![Gopher Piggy](https://images.squarespace-cdn.com/content/v1/5e10bdc20efb8f0d169f85f9/1632053256010-P6GZOJ8UDZPH5JZDTSJE/gopher-piggy.png)  ![TMcell](https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/0f/23/b6/0f23b6c6-5de8-4194-1abf-5bba5f6aa8d3/AppIcon-1x_U007emarketing-85-220-5.png/512x512bb.jpg)
+
 
 ## 🎯 Project Aim
 
-This project was created to solve the challenge of integrating SMS functionality into modern web applications without relying on expensive SMS gateway services. By using readily available GSM modems and SIM cards, organizations can:
+Building open-source apps with SMS OTP signup services can cost a lot of money. To automate this process, you can simply connect a GSM modem to your PC, run this Go tool, and configure it to your API’s OTP verification handler. Once configured, the app works autonomously, forwarding SMS messages for OTP verification without worrying about the balance left on your SIM card.
+
+In Turkmenistan, for example, sending SMS is often charged, but **receiving SMS is free** 😄 — making this approach highly cost-effective.
 
 * **Reduce SMS costs** - Use local SIM cards instead of premium SMS APIs
 * **Gain independence** - No reliance on third-party SMS services
@@ -24,7 +30,6 @@ This project was created to solve the challenge of integrating SMS functionality
 └─────────────────┘    └──────────────────────┘    └─────────────────────┘
 ```
 
----
 
 ## 🏃‍♂️ Running the Application
 
@@ -44,7 +49,6 @@ make build
 
 > By default, the application will look for `config.json` in the working directory if `CONFIG_PATH` is not set, don't forget to copy the `config.sample.json`.
 
----
 
 ## 📁 Project Structure
 
@@ -68,7 +72,6 @@ modem-sms-register/
 └── Makefile
 ```
 
----
 
 ## 🚀 Use Cases
 
@@ -91,7 +94,6 @@ modem-sms-register/
 * **Weather Monitoring** - Receive weather station updates
 * **Security Systems** - Get alerts from security cameras or sensors
 
----
 
 ## 📋 Requirements
 
@@ -112,7 +114,6 @@ modem-sms-register/
 * **HTTP Endpoint** - Target API server to receive SMS data
 * **Internet Connection** - For HTTP requests (cellular or WiFi)
 
----
 
 ## ⚙️ Docker & Makefile Notes
 
