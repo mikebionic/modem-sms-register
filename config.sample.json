@@ -1,7 +1,10 @@
 {
-	"serial_port": "/dev/ttyUSB3",
-	"hostname": "http://hostname",
-	"url_prefix": "/api",
-	"url_path": "/sms-register/",
-	"sha_key": "secret key"
+  "serial_port": "/dev/ttyUSB0",
+  "hostname": "https://your-api-server.com",
+  "url_prefix": "/api/v1",
+  "url_path": "/sms-register",
+  "sha_key": "your-secret-access-token-here",
+  "baud": 115200,
+  "timeout": "400ms",
+  "period": "24h"
 }
